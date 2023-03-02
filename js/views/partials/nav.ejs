@@ -1,0 +1,9 @@
+<ul class="nav nav-pills" >
+    <% routes.forEach((route)=>{ 
+        let activeClass=route.isDefaultView?"active":"";
+        %>
+        <li class="nav-item">
+            <a  class="nav-link <%=activeClass%>"  href="<%=route.name%>"><strong><%=route.title%></strong></a>
+          </li>
+     <% }) %>
+  </ul>
